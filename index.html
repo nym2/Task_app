@@ -13,28 +13,88 @@
     <section class="h-screen pt-20">
         <div class="w-[800px] m-auto">
             <!--heading-->
-            <h1 class="text-3xl font-black">Todos</h1>
+            <h1 class="text-4xl font-black">Todos</h1>
 
             <br>
             <!--container for incomplete task-->
-            <div>
-                <button class="border w-full p-4 flex gap-4 rounded-lg hover:border-black">
+            <div class="flex flex-col divide-y">
+                <button class="border w-full p-4 flex gap-4 rounded-lg hover:border-black text-gray-500 hover:text-black font-semibold">
                     <span class="material-icons">add</span>
                     Add New Task
                 </button>
-                <div></div>
+                <div>
+                    <!--task card-->
+                    <div class="flex items-center justify-between p-4 hover:bg-gray-100 active:bg-tomatoe rounded-md">
+                        <div class="flex items-center gap-4">
+                            <input type="checkbox" class="size-4 accent-black" >
+                            <p class="text-large">Apply basic styling</p>
+
+                        </div>
+                        <div>
+                            <span class="material-icons cursor-pointer">delete</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between p-4 hover:bg-gray-100 active:bg-tomatoe rounded-md">
+                        <div class="flex items-center gap-4">
+                            <input type="checkbox" class="size-4 accent-black" >
+                            <p class="text-large">Apply basic styling</p>
+
+                        </div>
+                        <div>
+                            <span class="material-icons cursor-pointer">delete</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between p-4 hover:bg-gray-100 active:bg-tomatoe rounded-md">
+                        <div class="flex items-center gap-4">
+                            <input type="checkbox" class="size-4 accent-black" >
+                            <p class="text-large">Apply basic styling</p>
+
+                        </div>
+                        <div>
+                            <span class="material-icons cursor-pointer">delete</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!--container for complete task-->
-            <div>
-                <h1>Completed Tasks</h1>
-                <div></div>
+            <div class="flex flex-col divide-y">
+                <h1 class="font-bold text-xl">Completed Tasks</h1>
+
+                <div class="flex items-center justify-between p-4 hover:bg-gray-100 active:bg-tomatoe rounded-md">
+                    <div class="flex items-center gap-4">
+                        <input type="checkbox" class="size-4 accent-black" >
+                        <p class="text-large">Apply basic styling</p>
+
+                    </div>
+                    <div>
+                        <span class="material-icons cursor-pointer">delete</span>
+                    </div>
+                </div>
             </div>
         </div>
 
     </section>
 
-    <h1 class="text-red-400">Hello World</h1>
+    <!--modal-->
+    <section class="w-full h-screen bg-neutral-800/40 top-0 pt-16 justify-center items-start hidden fixed">
+
+        <div class="bg-white w-full m-auto max-w-3xl rounded-lg p-6">
+            <h1 class="text-xl font-bold mb-4">New Task</h1>
+
+            <div class="flex flex-col gap-1 mb-5">
+                <label for="title" class="text-lg mb-2 font-medium">Task title</label>
+                <input name="title" type="text" placeholder="Enter title of task" class="p-2 border">
+            </div>
+
+            <div class="flex justify-end gap-3">
+                <button class="border border-neutral-300 font-semibold py-2 px-3">Cancel</button>
+                <button class="bg-black text-white py-2 px-3 rounded-md font-semibold mt-4">Create Task</button>
+            </div>
+        </div>
+
+    </section>
     
 </body>
 </html>
