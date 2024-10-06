@@ -1,0 +1,14 @@
+{
+    "tasks": [
+      {
+        "id": 1,
+        "titles": "Setting up the database",
+        "isComplete": false
+      },
+      {
+        "id": 2,
+        "titles": "Create a basic structure for HTML",
+        "isComplete": true
+      }
+    ]
+  }
