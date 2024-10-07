@@ -27,7 +27,7 @@
                     <div class="flex items-center justify-between p-4 hover:bg-gray-100 active:bg-tomatoe rounded-md">
                         <div class="flex items-center gap-4">
                             <input type="checkbox" class="size-4 accent-black" >
-                            <p class="text-large">Apply basic styling</p>
+                            <p class="text-large">Complete assignments</p>
 
                         </div>
                         <div>
@@ -37,7 +37,7 @@
                     <div class="flex items-center justify-between p-4 hover:bg-gray-100 active:bg-tomatoe rounded-md">
                         <div class="flex items-center gap-4">
                             <input type="checkbox" class="size-4 accent-black" >
-                            <p class="text-large">Apply basic styling</p>
+                            <p class="text-large">Join Morning Stand-Up</p>
 
                         </div>
                         <div>
@@ -48,7 +48,7 @@
                     <div class="flex items-center justify-between p-4 hover:bg-gray-100 active:bg-tomatoe rounded-md">
                         <div class="flex items-center gap-4">
                             <input type="checkbox" class="size-4 accent-black" >
-                            <p class="text-large">Apply basic styling</p>
+                            <p class="text-large">Log into Canvas</p>
 
                         </div>
                         <div>
@@ -65,7 +65,7 @@
                 <div class="flex items-center justify-between p-4 hover:bg-gray-100 active:bg-tomatoe rounded-md">
                     <div class="flex items-center gap-4">
                         <input type="checkbox" class="size-4 accent-black" >
-                        <p class="text-large">Apply basic styling</p>
+                        <p class="text-large">Join Evening Stand-Up</p>
 
                     </div>
                     <div>
@@ -78,25 +78,25 @@
     </section>
 
     <!--modal-->
-    <section class="w-full h-screen bg-neutral-800/40 top-0 pt-16 justify-center items-start hidden fixed">
 
+    <section id="modal" class="w-full h-screen bg-neutral-800/40 top-0 pt-16 justify-center items-start hidden fixed">
         <div class="bg-white w-full m-auto max-w-3xl rounded-lg p-6">
             <h1 class="text-xl font-bold mb-4">New Task</h1>
-
+    
             <div class="flex flex-col gap-1 mb-5">
                 <label for="title" class="text-lg mb-2 font-medium">Task title</label>
                 <input name="title" type="text" placeholder="Enter title of task" class="p-2 border">
             </div>
-
+    
             <div class="flex justify-end gap-3">
-                <button class="border border-neutral-300 font-semibold py-2 px-3">Cancel</button>
-                <button class="bg-black text-white py-2 px-3 rounded-md font-semibold mt-4">Create Task</button>
+                <button id="cancel_button" class="border border-neutral-300 font-semibold py-2 px-3">Cancel</button>
+                <button id="add_button" class="text-white py-2 px-3 rounded-md font-semibold mt-4">Create Task</button>
             </div>
         </div>
-
     </section>
 
     <script src="./main.js"></script>
+    <script src="main.json "></script>
     
 </body>
 </html>

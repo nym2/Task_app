@@ -17,7 +17,7 @@ CANCEL_BUTTON.addEventListener("click", hideModal);
 // FETCHING => GET requests;
 
 function fetchData() {
-  fetch("file://wsl.localhost/Ubuntu/home/pamba/Development/Code/task-app/Task_app/index.html")
+  fetch("file://wsl.localhost/Ubuntu/home/pamba/Nympha/phase-1/Task_app/index.html")
     .then((response) => response.json())
     .then((data) => {
       renderItems(data);
